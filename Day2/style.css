@@ -1,0 +1,65 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(black, grey);
+    font-family: sans-serif;
+    overflow: hidden;
+}
+.card{
+    border: 2px dotted orange;
+    width: 300px;
+    padding: 30px 34px;
+    background: #222;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 1px 46px -16px rgba(117,133,128,0.61);
+
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    background-color: black;
+    width: 120px;
+    height: 120px;
+   border: 3px solid blue;
+   border-radius: 50%;
+   margin: 0 auto;
+}
+#avatar{
+    width: 110px;
+    height: 110px;
+   object-fit: cover;
+   border-radius: 50%;
+   background-size: 50px;
+}
+.card-name{   margin-top: 16px; font-size: 1.4rem; color: #fff; }
+.card-role {margin: 10px; font-size: 0.9em; margin-top: -6px; color: yellowgreen; } 
+.working {margin: 20x; font-size: 1.2em; color: white;}
+
+.card-actions{
+    display: flex;
+     justify-content: center; 
+    align-items: center;
+     gap: 15px;
+}
+.card-actions button {
+    border-radius: 8px;
+    background-color: crimson;
+    color: white;
+    border:  none;
+    font-size: 1em;
+    padding: 12px;
+    transition: 0.3s;
+}
+.card-actions button:hover {
+    opacity: 75%;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.card-actions button:focus-visible{
+    outline: 3px solid #eef564;
+    outline-offset: 2px;
+}
